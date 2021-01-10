@@ -39,7 +39,6 @@ class ContactListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupRecyclerView()
-        
 
         view.findViewById<Button>(R.id.add_contact).setOnClickListener {
             findNavController().navigate(R.id.action_ContactListFragment_to_AddContactFragment)

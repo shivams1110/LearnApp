@@ -25,12 +25,10 @@ abstract class ContactRoomDatabase : RoomDatabase() {
             .addCallback(object : Callback() {
                 override fun onCreate(db: SupportSQLiteDatabase) {
                     super.onCreate(db)
-
+                    // here we can add data in room DB at first time created.
                 }
             })
             .build()
-
-
     }
 
 }

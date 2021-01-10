@@ -13,11 +13,5 @@ class DbBaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_db_base)
         setSupportActionBar(findViewById(R.id.toolbar))
-
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
-
-        val navController = navHostFragment.navController
-
     }
 }

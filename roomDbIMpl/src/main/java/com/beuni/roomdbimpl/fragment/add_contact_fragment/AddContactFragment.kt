@@ -24,10 +24,6 @@ class AddContactFragment : Fragment() {
         ContactViewModelFactory((this.activity?.application as RoomDbApplication).repository)
     }
 
-    private val db: ContactRoomDatabase by lazy {
-        ContactRoomDatabase.getInstance(this.requireContext())
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

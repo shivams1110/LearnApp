@@ -18,6 +18,7 @@ class ContactViewModel(private val contactRepository: ContactRepository) : ViewM
 class ContactViewModelFactory(private val contactRepository: ContactRepository): ViewModelProvider.Factory{
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if(modelClass.isAssignableFrom(ContactViewModel::class.java)){
+            @Suppress("UNCHECKED_CAST")
             return ContactViewModel(contactRepository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel Class")
