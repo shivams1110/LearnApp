@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.beuni.roomdbimpl">
+
+    <application
+        android:name=".RoomDbApplication"
+        >
+        <activity
+            android:name=".activity.DbBaseActivity"
+            android:label="@string/title_activity_db_base"
+            android:theme="@style/Theme.LearnApp.RoomDb.NoActionBar"></activity>
+    </application>
+
+</manifest>
